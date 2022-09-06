@@ -1,0 +1,52 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav{
+    width: 100%;
+    height: 100px;
+    background-color: #f00;
+}
+
+
+
+
+
+.backToTopBtn{
+    width: 50px;
+    height: 50px;
+    background-color: #f00;
+    position: fixed;
+    cursor: pointer;
+    bottom: 50px;
+    right: 50px;
+    text-align: center;
+    line-height: 50px;
+    font-size: 35px;
+    color: #fff;
+    border-radius: 50%;
+    display: none;
+}
+
+.navBarFixed{
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateY(-100%);
+    animation-name: navbarFixed;
+    animation-duration: 1s;
+    animation-timing-function: ease-in;
+    animation-fill-mode: forwards;
+}
+@keyframes navbarFixed {
+    0%{
+        transform: translateY(-100%);   
+    }
+    100%{
+        transform: translateY(0%);    
+    }
+}
+
